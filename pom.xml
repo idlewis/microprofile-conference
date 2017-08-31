@@ -95,7 +95,7 @@
         <version.surefire.plugin>2.19.1</version.surefire.plugin>
         <version.war.plugin>2.6</version.war.plugin>
         <version.fabric8.plugin>3.1.83</version.fabric8.plugin>
-        <version.liberty.plugin>1.2.1</version.liberty.plugin>
+        <version.liberty.plugin>2.0.0</version.liberty.plugin>
 
         <!-- Test -->
         <version.arquillian>1.1.11.Final</version.arquillian>
@@ -112,7 +112,7 @@
         <version.payara>4.1.1.163</version.payara>
         <version.tomee>7.0.1</version.tomee>
         <version.wildfly>10.0.0.Final</version.wildfly>
-        <version.liberty>16.0.0.3</version.liberty>
+        <version.liberty>17.0.0.2</version.liberty>
 
         <!-- Dependencies -->
         <version.javaee>7.0</version.javaee>
