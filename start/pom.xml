@@ -90,7 +90,7 @@
 									<goal>start-server</goal>
 								</goals>
 								<configuration>
-									<installDirectory>..\microservice-session\target\liberty</installDirectory>
+									<installDirectory>../microservice-session/target/liberty/${liberty.root}</installDirectory>
 									<serverName>sessionServer</serverName>
 								</configuration>
 							</execution>
@@ -101,7 +101,7 @@
 									<goal>start-server</goal>
 								</goals>
 								<configuration>
-									<installDirectory>..\microservice-speaker\target\liberty</installDirectory>
+									<installDirectory>../microservice-speaker/target/liberty/${liberty.root}</installDirectory>
 									<serverName>speakerServer</serverName>
 								</configuration>
 							</execution>
@@ -112,7 +112,7 @@
 									<goal>start-server</goal>
 								</goals>
 								<configuration>
-									<installDirectory>..\microservice-vote\target\liberty</installDirectory>
+									<installDirectory>../microservice-vote/target/liberty/${liberty.root}</installDirectory>
 									<serverName>voteServer</serverName>
 								</configuration>
 							</execution>
@@ -123,7 +123,7 @@
 									<goal>start-server</goal>
 								</goals>
 								<configuration>
-									<installDirectory>..\microservice-schedule\target\liberty</installDirectory>
+									<installDirectory>../microservice-schedule/target/liberty/${liberty.root}</installDirectory>
 									<serverName>scheduleServer</serverName>
 								</configuration>
 							</execution>

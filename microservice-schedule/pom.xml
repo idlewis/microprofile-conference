@@ -195,7 +195,7 @@
                            </execution>
                        </executions>
                        <configuration>
-                           <outputDirectory>${project.build.directory}/liberty/usr/servers/scheduleServer/apps</outputDirectory>
+                           <outputDirectory>${project.build.directory}/liberty/${liberty.root}usr/servers/scheduleServer/apps</outputDirectory>
                            <overwrite>true</overwrite>
                            <resources>
                                <resource>

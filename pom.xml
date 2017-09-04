@@ -96,6 +96,7 @@
         <version.war.plugin>2.6</version.war.plugin>
         <version.fabric8.plugin>3.1.83</version.fabric8.plugin>
         <version.liberty.plugin>2.0</version.liberty.plugin>
+        <liberty.root>wlp/</liberty.root>
 
         <!-- Test -->
         <version.arquillian>1.1.11.Final</version.arquillian>

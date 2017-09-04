@@ -298,7 +298,7 @@
                     <includeArtifactIds>server-snippet</includeArtifactIds>
                     <prependGroupId>true</prependGroupId>
                     <outputDirectory>
-                        ${project.build.directory}/liberty/usr/servers/${wlpServerName}/configDropins/defaults
+                        ${project.build.directory}/liberty/${liberty.root}usr/servers/${wlpServerName}/configDropins/defaults
                     </outputDirectory>
                 </configuration>
             </plugin>
@@ -313,7 +313,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                          <outputDirectory>${project.build.directory}/liberty/usr/servers/${wlpServerName}/dropins</outputDirectory>
+                          <outputDirectory>${project.build.directory}/liberty/${liberty.root}usr/servers/${wlpServerName}/dropins</outputDirectory>
                           <resources>
                             <resource>
                               <directory>${project.build.directory}</directory>
