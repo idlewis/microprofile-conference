@@ -99,7 +99,7 @@
                                 </goals>
                                 <configuration>
                                     <outputDirectory>
-                                        ${project.build.directory}/liberty/wlp/usr/servers/speakerServer/apps
+                                        ${project.build.directory}/liberty/usr/servers/speakerServer/apps
                                     </outputDirectory>
                                     <overwrite>true</overwrite>
                                     <resources>
@@ -132,8 +132,7 @@
                                     <goal>package-server</goal>
                                 </goals>
                                 <configuration>
-                                    <packageFile>${project.build.directory}/${project.artifactId}${qualifier.jar}.jar
-                                    </packageFile>
+                                    <packageFile>${project.build.directory}/${project.artifactId}${qualifier.jar}.zip</packageFile>
                                     <include>runnable</include>
                                 </configuration>
                             </execution>

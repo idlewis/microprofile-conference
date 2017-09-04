@@ -33,13 +33,13 @@
 
     <properties>
         <!-- Liberty server properties -->
-        <wlpServerName>VoteServer</wlpServerName>
+        <wlpServerName>voteServer</wlpServerName>
         <warName>vote-service-application</warName>
         <warVersion>1.0.0-SNAPSHOT</warVersion>
         <!--This is set in the ibm-web-ext.xml file -->
         <warContext>vote</warContext>
-        <package.file>${project.build.directory}/${project.artifactId}${qualifier.jar}.jar</package.file>
-        <packaging.type>runnable</packaging.type>
+        <package.file>${project.build.directory}/${project.artifactId}${qualifier.jar}.zip</package.file>
+<!--         <packaging.type>runnable</packaging.type> -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <testServerHttpPort>7070</testServerHttpPort>
@@ -211,7 +211,7 @@
                     <extensions>true</extensions>
                     <configuration>
                         <serverName>${wlpServerName}</serverName>
-                        <assemblyInstallDirectory>${project.build.directory}</assemblyInstallDirectory>
+                        <assemblyInstallDirectory>${project.build.directory}/liberty</assemblyInstallDirectory>
                         <configFile>src/main/liberty/config/server.xml</configFile>
                         <packageFile>${package.file}</packageFile>
                         <include>${packaging.type}</include>
@@ -298,7 +298,7 @@
                     <includeArtifactIds>server-snippet</includeArtifactIds>
                     <prependGroupId>true</prependGroupId>
                     <outputDirectory>
-                        ${project.build.directory}/wlp/usr/servers/${wlpServerName}/configDropins/defaults
+                        ${project.build.directory}/liberty/usr/servers/${wlpServerName}/configDropins/defaults
                     </outputDirectory>
                 </configuration>
             </plugin>
@@ -313,7 +313,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                          <outputDirectory>${project.build.directory}/wlp/usr/servers/${wlpServerName}/dropins</outputDirectory>
+                          <outputDirectory>${project.build.directory}/liberty/usr/servers/${wlpServerName}/dropins</outputDirectory>
                           <resources>
                             <resource>
                               <directory>${project.build.directory}</directory>

@@ -195,7 +195,7 @@
                            </execution>
                        </executions>
                        <configuration>
-                           <outputDirectory>${project.build.directory}/liberty/wlp/usr/servers/scheduleServer/apps</outputDirectory>
+                           <outputDirectory>${project.build.directory}/liberty/usr/servers/scheduleServer/apps</outputDirectory>
                            <overwrite>true</overwrite>
                            <resources>
                                <resource>
@@ -217,7 +217,7 @@
                              <goals>
                                  <goal>create-server</goal>
                              </goals>
-                           </execution>
+                            </execution>
                             <execution>
                                 <id>package-server</id>
                                 <phase>package</phase>
@@ -225,7 +225,7 @@
                                     <goal>package-server</goal>
                                 </goals>
                                 <configuration>
-                                    <packageFile>${project.build.directory}/${project.artifactId}${qualifier.jar}.jar</packageFile>
+                                    <packageFile>${project.build.directory}/${project.artifactId}${qualifier.jar}.zip</packageFile>
                                     <include>runnable</include>
                                 </configuration>
                             </execution>
